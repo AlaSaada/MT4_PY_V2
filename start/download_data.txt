@@ -1,0 +1,6 @@
+; ouvrir le graphique et exécuter expert et/ou script
+Symbol=EURCZK
+Period=H4
+Template=f_model.tpl
+Script=f
+;ScriptParameters==per_conv.set

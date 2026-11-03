@@ -1,0 +1,11 @@
+Profile=Multi_graph
+ExpertsEnable=true
+ExpertsDllImport=false
+ExpertsExpImport=true
+ExpertsTrades=true
+;Symbol=GBPUSD
+;Period=M5
+;Template=popular.tpl
+;Expert=TREND FOLLOWING ALGO\TREND FOLLOWING ALGO
+;ExpertParameters=TREND FOLLOWING ALGO.set
+; start strategy tester

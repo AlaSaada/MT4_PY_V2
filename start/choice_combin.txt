@@ -1,0 +1,23 @@
+;ExpertsEnable=true
+;ExpertsDllImport=true
+;ExpertsExpImport=true
+;ExpertsTrades=true
+;Symbol=GBPUSD
+;Period=M15
+;Template=popular.tpl
+;Expert=MACD Sample
+;ExpertParameters=macd.set
+; start strategy tester
+TestExpert=Backtest complet
+TestExpertParameters=choice_combin.set
+TestSymbol=EURUSD
+TestPeriod=M15
+TestModel=2
+TestSpread=10
+TestOptimization=false
+TestDateEnable=true
+TestFromDate=2026.07.10
+TestToDate=2026.07.20
+TestReplaceReport=false
+TestShutdownTerminal=true
+TestVisualEnable=false
