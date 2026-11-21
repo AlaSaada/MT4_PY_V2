@@ -1,4 +1,5 @@
 ; ouvrir le graphique et exécuter expert et/ou script
+MarketWatch=watch.set
 Symbol=EURCZK
 Period=H4
 Template=f_model.tpl

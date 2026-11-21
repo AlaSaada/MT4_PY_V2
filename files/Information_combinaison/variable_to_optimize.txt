@@ -28,5 +28,3 @@ HourStartTime
 HourStopTime
 Stand_By
 Stand_By_Before
--
-inp_risk_per_position

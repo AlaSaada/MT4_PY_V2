@@ -572,7 +572,9 @@ def prepare_files_before_optimisation(num_folder_real, is_it_testing, folder_py_
 
     shutil.copytree(folder_py_code + r"\template",             folder_test + num_folder_real + r"\templates",                    dirs_exist_ok=True)
     shutil.copytree(folder_py_code + r"\script",               folder_test + num_folder_real + mql4 + r"\Scripts",               dirs_exist_ok=True)
-    
+        
+    shutil.copytree(folder_py_code + r"\marketWatch",          folder_test + num_folder_real + r"\history\symbolsets",               dirs_exist_ok=True)
+
     if ( is_it_testing == True ):
         shutil.copytree(folder_py_code + r"\start",      folder_test + num_folder_real, dirs_exist_ok=True)
     
@@ -747,7 +749,7 @@ def manage_real_mt4_during_night(test_asset, spread, copy_paste_files, backtest,
             if launch_info == True:
                 if drawdown_close_remove_list(track_record, test_asset, drawdown, set_real, MT4_PATH, True, True) == True:
                     int_value_failed[-1] = (-1)
-                    modify_chart_profile(file_set_real, chart_path)
+                    modify_chart_profile(file_set_real, chart_path, True)
                 #  save_file_and_open_mt4(MT4_PATH, cache_folder, set_real, file_set_real, file_opti)
                     print("Drawdown dépassé ! Arrête l'EA : enregistre les inputs dans 'Profiles', len --> ", len(drawdown), "  (normalement 1)-->", drawdown[0], "   + int_value_failed=", int_value_failed[-1], "  (normalement -1)")
                 else:
@@ -848,6 +850,7 @@ def verify_and_manage_real(all_informations, night, Event, signal, other_communi
             print("C'est bon")
             signal.clear()
             Event.clear()
+            time.sleep(50)
 
 ###########################################################################################################################################################
 

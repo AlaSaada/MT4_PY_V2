@@ -8,6 +8,7 @@
 ;Expert=MACD Sample
 ;ExpertParameters=macd.set
 ; start strategy tester
+MarketWatch=watch.set
 TestExpert=Backtest complet
 TestExpertParameters=choice_combin.set
 TestSymbol=EURUSD

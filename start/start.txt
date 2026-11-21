@@ -8,6 +8,10 @@
 ;Expert=MACD Sample
 ;ExpertParameters=macd.set
 ; start strategy tester
+Period=H4
+Template=f_model.tpl
+Script=f2
+MarketWatch=watch.set
 TestExpert=TREND FOLLOWING ALGO\TREND FOLLOWING ALGO
 TestExpertParameters=TREND FOLLOWING ALGO.set
 TestSymbol=EURUSD

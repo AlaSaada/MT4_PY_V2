@@ -1,3 +1,4 @@
+MarketWatch=watch.set
 Profile=Multi_graph
 ExpertsEnable=true
 ExpertsDllImport=false
