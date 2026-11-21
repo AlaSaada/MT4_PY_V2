@@ -8,7 +8,7 @@ import threading
 from datetime import date
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-
+#comment
 def open_MT4 ( mt4, caches, file_parameter, opti_num, wait=True ):
     mt4_path = mt4
     time.sleep(10)
