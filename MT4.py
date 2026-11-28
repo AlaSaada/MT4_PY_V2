@@ -872,7 +872,7 @@ def manage_real_global(all_informations, list_event, other_communication):
             print("Lancement des thread --> verify_and_manage_real, --> first_call_var =", first_call_var)
 
             for g in range(len(all_informations)-1):
-                thread = threading.Thread(target=verify_and_manage_real, args=(all_informations, (0, 23), list_event[g][0], list_event[g][1], other_communication, g, first_call_var,))
+                thread = threading.Thread(target=verify_and_manage_real, args=(all_informations, (0, 5), list_event[g][0], list_event[g][1], other_communication, g, first_call_var,))
                 thread.start()
 
 ###########################################################################################################################################################
